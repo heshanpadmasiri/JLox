@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Lox",
+            "request": "launch",
+            "mainClass": "JLox.Lox",
+            "projectName": "JLox"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

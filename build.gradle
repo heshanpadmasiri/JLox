@@ -17,8 +17,8 @@ dependencies {
   testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
-mainClassName = 'myapp.MyApp'
-startScripts.applicationName = 'myapp'
+mainClassName = 'JLox.Lox'
+startScripts.applicationName = 'lox'
 
 run {
   if (project.hasProperty('args')) {
