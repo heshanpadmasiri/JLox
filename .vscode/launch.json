@@ -3,16 +3,26 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GenerateAst",
+            "request": "launch",
+            "mainClass": "tool.GenerateAst",
+            "projectName": "JLox",
+            "args": "./src/main/java/JLox/"
+        },
+        {
+            "type": "java",
             "name": "Launch Lox",
             "request": "launch",
             "mainClass": "JLox.Lox",
-            "projectName": "JLox"
+            "projectName": "JLox",
+            "args": "${command:SpecifyProgramArgs}"
         },
         {
             "type": "java",
             "name": "Launch Current File",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "${file}",
+            "args": "${command:SpecifyProgramArgs}"
         }
     ]
 }
