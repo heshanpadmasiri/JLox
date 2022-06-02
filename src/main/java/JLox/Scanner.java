@@ -78,7 +78,7 @@ class Scanner {
                 addToken(SEMICOLON);
                 break;
             case '*':
-                addToken(START);
+                addToken(STAR);
                 break;
             case '!':
                 addToken(match('=') ? BANG_EQUAL : BANG);
