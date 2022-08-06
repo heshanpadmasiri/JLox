@@ -44,6 +44,10 @@ public class Lox {
         List<Stmt> statements = parser.parse();
         if (hadError)
             return;
+        Resolver resolver = new Resolver(INTERPRETER);
+        resolver.resolve(statements);
+        if (hadError)
+            return;
         INTERPRETER.interpret(statements);
     }
 
